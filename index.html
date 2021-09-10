@@ -1794,34 +1794,231 @@
     }
   }
 </style>
-<body>
-  <div id="full" style="display: none;" >
+<body><div id="MathJax_Message" style="display: none;"></div>
+  <div class="container">
+    <header class="header">
+<h3 class="header-title">
+  <a href="">From Desk</a>
+  <small class="header-subtitle">of a beginner web developer</small>
+  <div class="menu">
+<nav class="menu-content">
+  
+    <a href="">About</a>
+  
+    <a href="">Blog</a>
+  
+    <a href="">Contact</a>
+  
+</nav>
+<nav class="social-icons">
+  
 
-    <div class="container">
-      <header class="header"><h3><a href="https://avery46.github.io/">Blog</a></h3></header>
-      <div class="content-container">
-        <div class="posts"><h1>sssssssss</h1><p>ffffff
-          fffffffffffffffffffff
-        </p></div>
-      </div>
+
+  <a href="" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+
+
+
+  <a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+
+</nav>
+</div>
+
+</h3>
+</header>
+
+    <div class="content-container">
+      
+<div class="posts-container">
+  <h1>
+    <a href="">Algorithms: Day 8</a>
+  </h1>
+  
+  <p>
+    Hi!
+
+I covered “Divide and Conquer Pattern”. It’s something like a binary search tree system. First will be shown naive solution:
+function search(arr, num) {
+for( let i = 0; i &lt; arr.length; i++ ) {
+  if( arr[i] === num ) {
+    return i;
+  }
+}
+return -1;
+}
+
+
+And here is solution with Divide and Conquer Pattern:
+function search(arr,... <a href=">Read more</a>
+    <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> 06 Sep 2021 - <i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  less than 1 minute read
+
+
+
+</span>
+  </p>
+</div>
+
+<div class="posts-container">
+  <h1>
+    <a href="">Algorithms: Day 7</a>
+  </h1>
+  
+  <p>
+    Hi!
+
+Here is solution for 167. Two Sum II:
+function twoSum(numbers, target) {
+for( let i = 0; i &lt; numbers.length - 1; i++ ){
+  for( let j = i + 1; j &lt; numbers.length; j++ ) {
+    if( numbers[i] + numbers[j] == target ) {
+      return [i + 1, j + 1]
+    }
+  }
+}
+};
+
+
+Find 169. Majority Element: the element that appears more tha... <a href="">Read more</a>
+    <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> 04 Sep 2021 - <i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  less than 1 minute read
+
+
+
+</span>
+  </p>
+</div>
+
+<div class="posts-container">
+  <h1>
+    <a href="">Algorithms: Day 6</a>
+  </h1>
+  
+  <p>
+    Hi there!
+
+Here is problem 136. Single Number solution.
+The idea is to sort first given array:
+var singleNumber = function(nums) {
+  nums.sort((a,b)=&gt; a - b)
+  for (var i = 1; i &lt; nums.length; i = i + 2){
+      if (nums[i-1] != nums[i]) return nums[i-1];
+  }
+  return nums[i - 1];
+};
+
+
+Today I also covered the Sliding Window Patte... <a href="">Read more</a>
+    <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> 02 Sep 2021 - <i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  1 minute read
+
+
+
+</span>
+  </p>
+</div>
+
+<div class="posts-container">
+  <h1>
+    <a href="">Algorithms: Day 5</a>
+  </h1>
+  
+  <p>
+    Hi!
+
+Here is Best Time to Buy and Sell Stock II solution:
+var maxProfit = function(prices) {
+let Profit = 0;
+
+for (let i = 1; i &lt; prices.length; i++) {
+  if (prices[i] &gt; prices[i - 1]) {
+    Profit += prices[i] - prices[i - 1];
+  }
+}
+return Profit;
+};
+
+<a href="">Read more</a>
+    <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> 28 Aug 2021 - <i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  less than 1 minute read
+
+
+
+</span>
+  </p>
+</div>
+
+<div class="posts-container">
+  <h1>
+    <a href="">Algorithms: Day 4</a>
+  </h1>
+  
+  <p>
+    Hi there!
+
+Start my day with Multiple Pointers Pattern on Udemy course and practice on Count Unique Values algorithm:
+var countUniqueValues = function(arr) {
+if(arr.length === 0) return 0;
+var i = 0;
+for (let j = 1; j &lt; arr.length; j++) {
+  if(arr[i] !== arr[j]) {
+    i++;
+    arr[i] = arr[j]
+  }
+}
+return i + 1;
+}
+
+
+Have to ... <a href="">Read more</a>
+    <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> 26 Aug 2021 - <i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  less than 1 minute read
+
+
+
+</span>
+  </p>
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+
+  <a class="pagination-button pagination-active next" href="">Older</a>
+
+
+  <span class="pagination-button">Newer</span>
+
+</div>
+
     </div>
-    
+    <footer class="footer">
+
+
+
+  <a href="" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 
 
 
 
+  <a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 
 
-
-
-
-
-
-
-
-
+<div class="footer-description"><a href="">From Desk | of a beginner web developer by Serhii T.</a></div>
+</footer>
 
   </div>
-   
-  </body>
+
+
+<div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div></body>
 </html>

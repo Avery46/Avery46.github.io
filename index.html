@@ -49,7 +49,38 @@
 .pagination-active:hover{background-color:#e0e0e0}
 .post-date{display:block;margin-top:3px;margin-bottom:1rem;color:#999;font-family: 'PT Serif', serif;font-size:0.8rem}
 @media (max-width: 30em){.posts h1{font-size:1.5rem}}
+#top {
 
+
+position: fixed;
+ color: #000000;
+background-color: #ffffff00; 
+right: 17px; 
+bottom: 80px; 
+padding: 4px 10px; 
+font-size: 40px; 
+ 
+border-radius: 4px;
+cursor: pointer; 
+display: none; 
+text-align: center; 
+z-index: 10;
+ 
+}  
+.w-100 {
+      width: 100%;
+  }
+  
+ 
+  
+  .b--light-silver {
+      border-color: rgba(0, 0, 0, 0.356) !important;
+  }
+  .bt {
+      border-top-style: solid;
+      border-top-width: 2px;
+  }
+  
 
 
 
@@ -243,7 +274,33 @@ hhhh
     </div>
   
 
-
+    <div class="bt b--light-silver w-100"></div>
+    <script>
+      $(function() {
+      
+        $('#top').click(function() {
+        
+          $("html, body").animate({
+            scrollTop:0
+          },1000);
+        })
+      })
+  
+      $(window).scroll(function() {
+  
+        if ($(this).scrollTop()>200) {
+        
+          $('#top').fadeIn();
+        }
+  
+        else {
+          $('#top').fadeOut();
+        }
+      });
+    </script>
+    <div id="top" >  
+       <i class="far fa-arrow-alt-circle-up"></i>
+    </div>
 
 </body>
 </html>

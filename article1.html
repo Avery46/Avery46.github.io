@@ -1,1 +1,185 @@
-fffff
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+        Blog
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    
+   
+  
+  
+  </style><style type="text/css">
+  body{font-family: 'PT Serif', serif;
+  font-size:18px;
+  color:#505050;
+  background: rgba(243, 243, 243, 0.459);
+  line-height:1.75rem}
+  @media (max-width: 30em){
+    body{font-size:14px;line-height:1.5rem}
+  body h1{font-size:1.5rem}}
+  h1{font-size:2rem}
+  h1 a{text-decoration:none}
+  h1,h2,h3,h4,h5,h6{font-family: 'PT Serif', serif;;color:#333}
+  a{text-decoration:underline;color:#333}
+  a:hover{color:#000;border-bottom:none}
+ 
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+.content-container{margin-bottom:4rem}
+@media (max-width: 768px){.container{width:90vw}}
+.header{padding-top:0.5rem;padding-bottom:0.5rem;margin-bottom:4rem;font-family: 'PT Serif', serif;}
+.header a:hover{color:black}
+.title a{font-size:2rem;text-decoration:none;color:#505050}
+
+.menu-content{float:left}
+.menu-content a{color:#999;font-size:1.5rem;padding-right:10px}
+
+.menu-content{margin-bottom:5px}
+
+
+
+.footer-description{display:block;margin-top:3px;margin-bottom:1rem;color:#999;font-family: 'PT Serif', serif;font-size:0.8rem}
+.posts-container{margin-bottom:5rem;padding:0px;list-style:none}
+.pagination{overflow:hidden;font-family: 'PT Serif', serif;text-align:center}
+.pagination a{text-decoration:none}
+.pagination-button{color:#999;border:1px solid #e0e0e0;padding:15px 45px;display:inline-block;font-size:16px;font-weight:bold}
+.pagination-active{color:#000}
+.pagination-active:hover{background-color:#e0e0e0}
+.post-date{display:block;margin-top:3px;margin-bottom:1rem;color:#999;font-family: 'PT Serif', serif;font-size:0.8rem}
+@media (max-width: 30em){.posts h1{font-size:1.5rem}}
+#top {
+
+
+position: fixed;
+ color: #000000;
+background-color: #ffffff00; 
+right: 17px; 
+bottom: 80px; 
+padding: 4px 10px; 
+font-size: 40px; 
+ 
+border-radius: 4px;
+cursor: pointer; 
+display: none; 
+text-align: center; 
+z-index: 10;
+ 
+}  
+.w-100 {
+      width: 100%;
+  }
+  
+ 
+  
+  .b--light-silver {
+      border-color: rgba(0, 0, 0, 0.356) !important;
+  }
+  .bt {
+      border-top-style: solid;
+      border-top-width: 2px;
+  }
+  
+
+
+
+  
+</style>
+
+
+
+
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <div  style="display: none;"></div>
+  <div class="container">
+    <header class="header">
+<h2 class="title">
+  <a href="https://avery46.github.io/">Blog</a>
+  <hr>
+  <div class="menu">
+<nav class="menu-content">
+  <i class="far fa-address-book"></i>
+    <a href="https://avery46.github.io/about.html">About</a>
+  
+    <a href="https://github.com/Avery46" target="_blank">GitHub</a>
+  
+    
+  
+</nav>
+
+</div>
+
+</h2>
+</header>
+
+    <div class="content-container">
+      
+
+
+<div class="posts-container">
+  <h1>
+    <a href="https://github.com/Avery46/article1.html">Article 1
+
+    </a>
+  </h1>
+  
+  <p>
+ Проверочка
+
+
+ <a href="https://github.com/Avery46/article1.html">Read more</a>
+    <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i>  2021 - <i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+
+
+
+</span>
+  </p>
+</div>
+
+
+
+
+
+    </div>
+  
+
+    <div class="bt b--light-silver w-100"></div>
+    <script>
+      $(function() {
+      
+        $('#top').click(function() {
+        
+          $("html, body").animate({
+            scrollTop:0
+          },1000);
+        })
+      })
+  
+      $(window).scroll(function() {
+  
+        if ($(this).scrollTop()>100) {
+        
+          $('#top').fadeIn();
+        }
+  
+        else {
+          $('#top').fadeOut();
+        }
+      });
+    </script>
+    <div id="top" >  
+       <i class="far fa-arrow-alt-circle-up"></i>
+    </div>
+
+</body>
+</html>
